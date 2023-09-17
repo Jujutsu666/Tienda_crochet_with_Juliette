@@ -15,8 +15,8 @@ const Items: item[] = [
 
 export default function Navbar() {
   return (
-    <header className="bg-black bg-opacity-90 h-24 sticky top-0 left-0 right-0 text-white flex items-center gap-12">
-      <div>Logo</div>
+    <header className="bg-black bg-opacity-90 h-24 sticky top-0 left-0 right-0 text-white flex items-center gap-12 px-10">
+      <Link href="/">Logo</Link>
       <nav className="flex items-center h-full mx-auto overflow-hidden">
         <ul className="relative flex">
           {Items.map(({ label, href, icon }) => (
