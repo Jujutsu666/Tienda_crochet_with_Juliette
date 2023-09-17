@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <header className={`${pathname === '/' ? 'bg-black text-white' : 'bg-white text-black'} h-24 sticky top-0 left-0 right-0  flex items-center gap-12`}>
-      <div>Logo</div>
+      <Link href="/">Logo</Link>
       <nav className="flex items-center h-full mx-auto overflow-hidden">
         <ul className="relative flex">
           {Items.map(({ label, href, icon }) => (
