@@ -1,5 +1,7 @@
+'use client';
 import Link from 'next/link';
 import Icon, { icon } from './Icon';
+import { usePathname } from 'next/navigation';
 
 interface item {
   label: string;
@@ -14,8 +16,10 @@ const Items: item[] = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
-    <header className="bg-black bg-opacity-90 h-24 sticky top-0 left-0 right-0 text-white flex items-center gap-12">
+    <header className={`${pathname === '/' ? 'bg-black text-white' : 'bg-white text-black'} h-24 sticky top-0 left-0 right-0  flex items-center gap-12`}>
       <div>Logo</div>
       <nav className="flex items-center h-full mx-auto overflow-hidden">
         <ul className="relative flex">
