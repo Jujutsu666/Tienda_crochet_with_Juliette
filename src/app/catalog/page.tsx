@@ -6,8 +6,8 @@ import Bag1 from "public/images/sale/bag1.jpg";
 import Bag2 from "public/images/sale/bag2.jpg";
 import Hat1 from "public/images/sale/hat1.jpg";
 import Hat2 from "public/images/sale/hat2.jpg";
-import KeyChain1 from "public/images/sale/KeyChain1.jpg";
-import KeyChain2 from "public/images/sale/KeyChain2.jpg";
+import KeyChain1 from "public/images/sale/keychain1.jpg";
+import KeyChain2 from "public/images/sale/keychain2.jpg";
 
 export default function Catalog() {
   return (
