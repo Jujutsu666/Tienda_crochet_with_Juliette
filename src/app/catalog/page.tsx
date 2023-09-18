@@ -1,22 +1,71 @@
+import Image from "next/image";
+import myImage from "public/images/catalog2.png";
+import Cow1 from "public/images/sale/cow1.jpg";
+import Cow2 from "public/images/sale/cow2.jpg";
+import Bag1 from "public/images/sale/bag1.jpg";
+import Bag2 from "public/images/sale/bag2.jpg";
+import Hat1 from "public/images/sale/hat1.jpg";
+import Hat2 from "public/images/sale/hat2.jpg";
+import KeyChain1 from "public/images/sale/KeyChain1.jpg";
+import KeyChain2 from "public/images/sale/KeyChain2.jpg";
+
 export default function Catalog() {
   return (
-    <main className="">
-      <header>
-        <p>
-          here i will put my 2 images. Catalog + crochet with juliette uno sobre
-          el otro
-        </p>
-      </header>
-      <section>
-        <p>
-          here i want to put 8 images. 4 en la primera linea y abajo 4 más. cada
-          imagen tendrá contenido debajo ej: nombre, precio luego estrellas para
-          los testimonios
-        </p>
+    <main className="flex flex-col items-center justify-between">
+      <section className="min-h-[calc(100vh-96px)]  w-full flex flex-col items-center">
+        <div>
+          <Image
+            className="w-[40%] mx-auto mt-[50px] mb-[20px]"
+            src={myImage}
+            alt="Picture of the author"
+          />
+        </div>
+        <div className="flex justify-center items-center space-x-4 ">
+          <Image
+            className="w-[200px] m-4"
+            src={Cow1}
+            alt="Picture of the author"
+          />
+          <Image
+            className="w-[200px] m-4"
+            src={Cow2}
+            alt="Picture of the author"
+          />
+          <Image
+            className="w-[265px] m-4"
+            src={Bag1}
+            alt="Picture of the author"
+          />
+          <Image
+            className="w-[167px] m-4"
+            src={Bag2}
+            alt="Picture of the author"
+          />
+        </div>
+        <div className="flex justify-center items-center space-x-4 ">
+          <Image
+            className="w-[195px] m-4 h-[250px]"
+            src={Hat1}
+            alt="Picture of the author"
+          />
+          <Image
+            className="w-[200px] m-4 h-[250px]"
+            src={Hat2}
+            alt="Picture of the author"
+          />
+
+          <Image
+            className="w-[265px] m-4  h-[250px]"
+            src={KeyChain1}
+            alt="Picture of the author"
+          />
+          <Image
+            className="w-[165px] m-4 h-[250px]"
+            src={KeyChain2}
+            alt="Picture of the author"
+          />
+        </div>
       </section>
-      <footer>
-        <p>ahí va el footer blanco </p>
-      </footer>
     </main>
   );
 }
