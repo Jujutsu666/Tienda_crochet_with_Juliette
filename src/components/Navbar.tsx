@@ -29,6 +29,7 @@ export default function Navbar() {
                 <Icon variant={icon} className="transition-all duration-500 group-hover:text-[#C4151C]" />
                 {label}
               </Link>
+              
             </li>
           ))}
         </ul>
