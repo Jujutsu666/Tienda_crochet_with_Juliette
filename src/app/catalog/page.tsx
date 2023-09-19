@@ -21,49 +21,74 @@ export default function Catalog() {
           />
         </div>
         <div className="flex justify-center items-center space-x-4 ">
-          <Image
-            className="w-[200px] m-4"
-            src={Cow1}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[200px] m-4"
-            src={Cow2}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[265px] m-4"
-            src={Bag1}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[167px] m-4"
-            src={Bag2}
-            alt="Picture of the author"
-          />
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4"
+              src={Cow1}
+              alt="Picture of the author"
+            />
+            <h3>Fluffy Cow</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            {" "}
+            <Image
+              className="w-[200px] m-4"
+              src={Cow2}
+              alt="Picture of the author"
+            />
+            <h3>Fluffy Cow</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[265px] m-4"
+              src={Bag1}
+              alt="Picture of the author"
+            />
+            <h3>Ocean bag</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[167px] m-4"
+              src={Bag2}
+              alt="Picture of the author"
+            />
+            <h3>Ocean bag</h3>
+          </div>
         </div>
-        <div className="flex justify-center items-center space-x-4 ">
-          <Image
-            className="w-[195px] m-4 h-[250px]"
-            src={Hat1}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[200px] m-4 h-[250px]"
-            src={Hat2}
-            alt="Picture of the author"
-          />
+        <div className="flex justify-center items-center space-x-4 mb-[50px]">
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[195px] m-4 h-[250px]"
+              src={Hat1}
+              alt="Picture of the author"
+            />
+            <h3>Ocean hat</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4 h-[250px]"
+              src={Hat2}
+              alt="Picture of the author"
+            />
+            <h3>Kitty hat </h3>
+          </div>
 
-          <Image
-            className="w-[265px] m-4  h-[250px]"
-            src={KeyChain1}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[165px] m-4 h-[250px]"
-            src={KeyChain2}
-            alt="Picture of the author"
-          />
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[265px] m-4  h-[250px]"
+              src={KeyChain1}
+              alt="Picture of the author"
+            />
+            <h3>Shrimp keychain</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[165px] m-4 h-[250px]"
+              src={KeyChain2}
+              alt="Picture of the author"
+            />
+            <h3>Fish keychain</h3>
+          </div>
         </div>
       </section>
     </main>

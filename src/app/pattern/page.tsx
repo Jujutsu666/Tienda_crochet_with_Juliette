@@ -22,49 +22,73 @@ export default function Pattern() {
         </div>
 
         <div className="flex justify-center items-center space-x-4 ">
-          <Image
-            className="w-[200px] m-4"
-            src={bag3}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[200px] m-4 h-[268px]"
-            src={bag4}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[200px] m-4 h-[268px]"
-            src={bag5}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[200px] m-4 h-[268px]"
-            src={bag6}
-            alt="Picture of the author"
-          />
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4"
+              src={bag3}
+              alt="Picture of the author"
+            />
+            <h3>Bag</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4 h-[268px]"
+              src={bag4}
+              alt="Picture of the author"
+            />
+            <h3>Bag</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4 h-[268px]"
+              src={bag5}
+              alt="Picture of the author"
+            /><h3>Bag</h3>
+          </div>
+          
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4 h-[268px]"
+              src={bag6}
+              alt="Picture of the author"
+            />
+            <h3>Bag</h3>
+          </div>
         </div>
-        <div className="flex justify-center items-center space-x-4 ">
-          <Image
-            className="w-[200px] m-4 h-[240px]"
-            src={bunny1}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[200px] m-4 h-[240px]"
-            src={bunny3}
-            alt="Picture of the author"
-          />
-          <Image
-            className="w-[200px] m-4 h-[240px]"
-            src={lavender3}
-            alt="Picture of the author"
-          />
+        <div className="flex justify-center items-center space-x-4 mb-[50px]">
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4 h-[240px]"
+              src={bunny1}
+              alt="Picture of the author"
+            />
+            <h3>Bunny</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4 h-[240px]"
+              src={bunny3}
+              alt="Picture of the author"
+            />
+            <h3>Bunny</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4 h-[240px]"
+              src={lavender3}
+              alt="Picture of the author"
+            />
+            <h3>Lavender</h3>
+          </div>
 
-          <Image
-            className="w-[200px] m-4 h-[240px]"
-            src={lavender2}
-            alt="Picture of the author"
-          />
+          <div className="flex flex-col items-center">
+            <Image
+              className="w-[200px] m-4 h-[240px]"
+              src={lavender2}
+              alt="Picture of the author"
+            />
+            <h3>Lavender</h3>
+          </div>
         </div>
       </section>
     </main>
