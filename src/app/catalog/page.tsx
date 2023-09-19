@@ -15,7 +15,7 @@ export default function Catalog() {
       <section className="min-h-[calc(100vh-96px)]  w-full flex flex-col items-center">
         <div>
           <Image
-            className="w-[40%] mx-auto mt-[50px] mb-[20px]"
+            className="w-[50%] mx-auto mt-[50px] mb-[20px]"
             src={myImage}
             alt="Picture of the author"
           />

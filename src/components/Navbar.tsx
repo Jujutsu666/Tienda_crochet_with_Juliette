@@ -33,16 +33,18 @@ export default function Navbar() {
           alt="Picture of the author"
         />
       </Link>
-      <nav className="flex items-center h-full mx-auto ml-[200px] mt-[100px] mb-[80px] overflow-hidden">
+      <nav className="flex items-center h-full mx-auto ml-[300px] mt-[100px] mb-[80px] overflow-hidden">
         <ul className="relative flex">
           {Items.map(({ label, href, icon }) => (
             <li
               key={label}
-              className="last:before:bg-[#C4151C] last:before:absolute last:before:-left-32 last:before:ml-20 last:before:-bottom-5 last:before:h-2 last:before:w-[2px] "
+              className="last:before:bg-[#C4151C] last:before:absolute last:before:-left-32 last:before:ml-20 last:before:-bottom-5 last:before:h-2 last:before:w-[2px]"
             >
               <Link
                 href={href}
-                className="relative group flex flex-col gap-[0.6rem] items-center justify-center w-40 h-14 transition-all duration-500 uppercase"
+                className={`relative group flex flex-col gap-[0.6rem] items-center justify-center w-40 h-14 transition-all duration-500 uppercase ${
+                  pathname === href ? "hidden" : "visible"
+                }`}
               >
                 <Icon
                   variant={icon}
