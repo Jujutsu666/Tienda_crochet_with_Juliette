@@ -20,6 +20,8 @@ export default function Catalog() {
             alt="Picture of the author"
           />
         </div>
+
+
         <div className="flex justify-center items-center space-x-4 ">
           <div className="flex flex-col items-center">
             <Image
@@ -55,6 +57,9 @@ export default function Catalog() {
             <h3>Ocean bag</h3>
           </div>
         </div>
+
+
+
         <div className="flex justify-center items-center space-x-4 mb-[50px]">
           <div className="flex flex-col items-center">
             <Image
