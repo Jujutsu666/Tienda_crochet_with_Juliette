@@ -8,7 +8,7 @@ export default function Home() {
       <section className="min-h-[calc(100vh-96px)] bg-black text-white w-full flex justify-center items-center text-8xl">
         <div>
           <Image
-            className="w-[500%] "
+            className="object-cover object-center "
             src={myImage}
             alt="Picture of the author"
           />
