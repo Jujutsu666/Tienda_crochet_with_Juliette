@@ -22,21 +22,21 @@ export default function Footer() {
       <div className="w-full pt-[70px] pb-5 px-[30px]">
         <div className="flex justify-center ">
           <a
-            className="no-underline bg-[white] m-5 p-2.5 rounded-[50%] hover:bg-[#111] transition-[10s]"
+            className="no-underline bg-[white] m-5 p-2.5 rounded-[50%] transition-[background-color] duration-[0.5s] hover:bg-pink-500 opacity-90"
             href="https://instagram.com/crochette_with_juliette?igshid=OGQ5ZDc2ODk2ZA=="
           >
             <Image
               src={instagram}
               alt="instagram"
-              className="w-[30px] text-[black] opacity-90 m-0.5"
+              className="w-[30px] text-[black] opacity-70 m-0.5"
             />
           </a>
           <a
-            className="no-underline bg-[white] m-5 p-2.5 rounded-[50%] hover:bg-[#111] hover:transition-[0.4s]"
+            className="no-underline bg-[white] m-5 p-2.5 rounded-[50%] transition-[background-color] duration-[0.5s] hover:bg-green-500 opacity-90"
             href="tel:+52613-139-3743"
           >
             <Image
-              className="w-[30px] text-[black] opacity-90 m-0.5"
+              className="w-[30px] text-[black] opacity-70 m-0.5"
               src={whatsapp}
               alt="whatsapp"
             />
