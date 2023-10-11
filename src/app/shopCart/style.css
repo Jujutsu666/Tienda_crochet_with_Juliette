@@ -1,0 +1,129 @@
+:root {
+  /* COLORS */
+  --onyx: hsl(0, 0%, 25%);
+  --Azur: hsl(219, 77%, 60%);
+  --blanc: hsl(0, 0%, 100%);
+  --platine: Ihsl(0, 0%, 91%);
+  --gainsboro: hsl(0, 0%, 90%);
+  --rouge-salsa: hsl(0, 77%, 60%);
+  --dim-gris: hsl(0, 0%, 39%);
+  --davys-gris: hsl(0, 0%, 30%);
+  --gris-espagnol: hsl(0, 0%, 62%);
+  --quick-silver: hsl(0, 0%, 64%);
+
+  /* TYPOGRAPHY */
+  --fs-28: 28px;
+  --fs-24: 24px;
+  --fs-18: 18px;
+  --fs-15: 15px;
+  --fs-14: 14px;
+
+  --fw-5: 500;
+  --fw-6: 600;
+  --fw-7: 700;
+
+  /* OTHERS */
+
+  --px: 60px;
+  --radius: 5px;
+}
+
+/* RESET */
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Source Sans 3", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  border: 2 solid;
+}
+
+Image,
+span {
+  display: inline-block;
+}
+
+label,
+Image {
+  display: block;
+}
+
+input {
+  /*font: inherit;*/
+  width: 100%;
+  /*border: none;*/
+}
+
+input:focus {
+  outline: 2px solid var(--Azur);
+}
+
+/* remove number input up & down button */
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*custom scrollbar bar*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 80%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 70%);
+}
+
+h1 {
+  font-size: var(--fs-28);
+  font-weight: var(--fw-6);
+  color: var(--onyx);
+  border-bottom: 1px solid var(--gainsboro);
+  padding: 20px var(--px);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#checkout {
+  width: 70%;
+  padding: 40px var(--px);
+  background: var(--blanc);
+  border-right: 1px solid var(--gainsboro);
+}
+
+h2 {
+  color: var(--onyx);
+  margin-bottom: 30px;
+  font-size: var(--fs-24);
+  font-weight: var(--fw-5);
+}
+
+

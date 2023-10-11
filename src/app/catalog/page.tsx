@@ -11,6 +11,7 @@ import KeyChain2 from "public/images/sale/keychain2.jpg";
 import heartFull from "public/images/heart1.png";
 import shop from "public/images/shop.png";
 
+
 export default function Catalog() {
   return (
     <main className="flex flex-col items-center justify-between">
@@ -43,7 +44,7 @@ export default function Catalog() {
             <div className="flex items-center justify-between ">
               <p className="mt-1">$50.00</p>
               <a
-                href="#"
+                href="/shopCart"
                 className=" inline-block no-underline transition-[background-color] duration-[0.5s]   hover:bg-[black] rounded-[50px] "
               >
                 <Image
@@ -74,7 +75,7 @@ export default function Catalog() {
             <div className="flex items-center justify-between ">
               <p className="mt-1">$50.00</p>
               <a
-                href="#"
+                href="/shopCart"
                 className=" inline-block no-underline transition-[background-color] duration-[0.5s]   hover:bg-[black] rounded-[50px] "
               >
                 <Image
@@ -105,7 +106,7 @@ export default function Catalog() {
             <div className="flex items-center justify-between ">
               <p className="mt-1">$50.00</p>
               <a
-                href="#"
+                href="/shopCart"
                 className=" inline-block no-underline transition-[background-color] duration-[0.5s]   hover:bg-[black] rounded-[50px] "
               >
                 <Image
@@ -136,7 +137,7 @@ export default function Catalog() {
             <div className="flex items-center justify-between ">
               <p className="mt-1">$50.00</p>
               <a
-                href="#"
+                href="/shopCart"
                 className=" inline-block no-underline transition-[background-color] duration-[0.5s]   hover:bg-[black] rounded-[50px] "
               >
                 <Image
@@ -169,7 +170,7 @@ export default function Catalog() {
             <div className="flex items-center justify-between ">
               <p className="mt-1">$50.00</p>
               <a
-                href="#"
+                href="/shopCart"
                 className=" inline-block no-underline transition-[background-color] duration-[0.5s]   hover:bg-[black] rounded-[50px] "
               >
                 <Image
@@ -199,7 +200,7 @@ export default function Catalog() {
             <div className="flex items-center justify-between ">
               <p className="mt-1">$50.00</p>
               <a
-                href="#"
+                href="/shopCart"
                 className=" inline-block no-underline transition-[background-color] duration-[0.5s]   hover:bg-[black] rounded-[50px] "
               >
                 <Image
@@ -230,7 +231,7 @@ export default function Catalog() {
             <div className="flex items-center justify-between ">
               <p className="mt-1">$50.00</p>
               <a
-                href="#"
+                href="/shopCart"
                 className=" inline-block no-underline transition-[background-color] duration-[0.5s]   hover:bg-[black] rounded-[50px] "
               >
                 <Image
@@ -260,7 +261,7 @@ export default function Catalog() {
             <div className="flex items-center justify-between ">
               <p className="mt-1">$50.00</p>
               <a
-                href="#"
+                href="/shopCart"
                 className=" inline-block no-underline transition-[background-color] duration-[0.5s]   hover:bg-[black] rounded-[50px] "
               >
                 <Image
