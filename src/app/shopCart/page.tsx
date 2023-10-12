@@ -58,54 +58,49 @@ export default function Shopcart() {
 
             <form action="#">
               {/*   cardholder name */}
-              <div className="">
+              <div className="mb-[20px]">
                 {/*   label default */}
-                <label
-                  htmlFor="cardholder-name"
-                  className="pl-[10px] mb-[5px] text-[length:var(--fs-14)]  text-[color:var(--gris-espagnol)]"
-                >
+                <label htmlFor="cardholder-name" className="">
                   Cardholder name
                 </label>
                 {/*   input default + id card holder name*/}
                 <input
                   type="text"
                   name="cardholder-name"
-                  className="rounded-[var(--radius)] text-[color:var(--davys-gris)] background-[color:var(----platine)] "
+                  className=" px-[15px] py-2.5 text-[18px] font-medium"
                 />
               </div>
 
               {/*   card number */}
-              <div className="">
+              <div className="mb-[20px] ">
                 {/*   label default */}
-                <label
-                  htmlFor="card-number"
-                  className="pl-[10px] mb-[5px] text-[length:var(--fs-14)]  text-[color:var(--gris-espagnol)]"
-                >
+                <label htmlFor="card-number" className="">
                   Card number
                 </label>
                 {/*   input default + id card number*/}
-                <input type="number" name="card-number" className="" />
+                <input
+                  type="number"
+                  name="card-number"
+                  className="px-[15px] py-2.5 text-[18px] font-medium tracking-[3px]  "
+                />
               </div>
 
               {/*   input flex */}
-              <div className="">
+              <div className="flex items-center gap-[30px]">
                 {/*  expire data */}
-                <div className="">
-                  <label
-                    htmlFor="expire-data"
-                    className="pl-[10px] mb-[5px] text-[length:var(--fs-14)]  text-[color:var(--gris-espagnol)]"
-                  >
+                <div className="w-[50%]">
+                  <label htmlFor="expire-data" className="">
                     Expiration date
                   </label>
                   {/*  expire data + id expire-date*/}
-                  <div className="">
+                  <div className=" flex items-center gap-[13px] ">
                     <input
                       type="number"
                       placeholder="31"
                       min={1}
                       max={31}
                       name="day"
-                      className="inherit w-[100%] border"
+                      className=" px-[15px] py-2.5 text-[18px] font-medium tracking-[3px] text-center bg-gray-300 "
                     />
                     /
                     <input
@@ -114,104 +109,54 @@ export default function Shopcart() {
                       min={1}
                       max={12}
                       name="month"
-                      className="inherit w-[100%] border"
+                      className="px-[15px] py-2.5 text-[18px] font-medium tracking-[3px] text-center bg-gray-300 "
                     />
                   </div>
                 </div>
 
                 {/*   cvv */}
-                <div className="">
+                <div className="w-[50%]">
                   {/*   label default */}
-                  <label
-                    htmlFor="cvv"
-                    className="pl-[10px] mb-[5px] text-[length:var(--fs-14)]  text-[color:var(--gris-espagnol)]"
-                  >
+                  <label htmlFor="cvv" className="">
                     CVV
                   </label>
                   {/*   input default + id cvv*/}
                   <input
                     type="number"
                     name="cvv"
-                    className="rounded-[var(--radius)] text-[color:var(--davys-gris)];
-  background: var(--platine)"
+                    className=" bg-gray-300 px-[15px] py-2.5 text-[18px] font-medium tracking-[3px]"
                   />
                 </div>
               </div>
             </form>
           </div>
-          {/*  btn btn primary - span id payamount*/}
-          <button className="">
-            <b>Pay</b> $ <span className="">100</span>
+
+          {/*  btn btn primary - span id payamount outlinenotworking*/}
+          <button className="bg-blue-500 px-[45px] py-[13px] font-medium text-white rounded-[var(--radius)] active:scale-99 focus:text-white focus:outline-offset-2 focus-custom-outline  ">
+            <b className="mr-[10px]">Pay</b> $ <span className="">100</span>
           </button>
         </section>
 
-        {/* cart  section class cart*/}
-        <section className="">
-          {/* cart-item-box*/}
-          <div className="">
-            {/* section heading*/}
+        {/* cart  section */}
+        <section className="cart">
+          <div className="cart-item-box">
             <h2 className="">Order summery</h2>
-            {/* product-card*/}
-            <div className="">
-              {/* card*/}
-              <div className="">
-                {/* img-box*/}
-                <div className="">
-                  <Image className="w-[80px] " src={Cow1} alt="item" />
+
+            <div className="product-card">
+              <div className="card">
+                <div className="img-box">
+                  <Image
+                    className="w-[80px] product-image"
+                    src={Cow1}
+                    alt="item"
+                  />
                 </div>
 
-                {/* detail*/}
-                <div className="">
-                  {/* product-name */}
-                  <h4 className="">Cow Black and White</h4>
-                  {/* WRAPPER*/}
-                  <div className="">
-                    {/* product-qty */}
-                    <div className="">
-                      {/* id decrement */}
-                      <button className="">
-                        <Image
-                          className="w-[20px] "
-                          src={remove}
-                          alt="remove"
-                        />
-                      </button>
-                      {/* id quantity */}
-                      <span className="">1</span>
-                      {/* id increment */}
-                      <button className="">
-                        <Image className="w-[20px] " src={add2} alt="remove" />
-                      </button>
-                    </div>
-                    {/* price+ id span price*/}
-                    <div className="">
-                      $ <span className="">1.25</span>
-                    </div>
-                  </div>
-                </div>
-                {/*id product close btn*/}
-                <button className="">
-                  <Image className="w-[20px] " src={close} alt="close" />
-                </button>
-              </div>
-            </div>
-            {/* copy of product card for card 2*/}
-            <div className="">
-              {/* card*/}
-              <div className="">
-                {/* img-box*/}
-                <div className="">
-                  <Image className="w-[80px] " src={Cow2} alt="item" />
-                </div>
+                <div className="detail">
+                  <h4 className="product-name">Black and White Cow</h4>
 
-                {/* detail*/}
-                <div className="">
-                  {/* product-name */}
-                  <h4 className="">Brown Cow</h4>
-                  {/* WRAPPER*/}
-                  <div className="">
-                    {/* product-qty */}
-                    <div className="">
+                  <div className="wrapper">
+                    <div className="product-qty">
                       {/* id decrement */}
                       <button className="">
                         <Image
@@ -234,37 +179,75 @@ export default function Shopcart() {
                   </div>
                 </div>
                 {/*id product close btn*/}
-                <button className="">
-                  <Image className="w-[20px] " src={close} alt="close" />
+                <button className=" product-close-btn">
+                  <Image src={close} alt="close" />
+                </button>
+              </div>
+            </div>
+
+            {/* copy of product-card for card 2*/}
+            <div className="product-card">
+              <div className="card">
+                <div className="img-box">
+                  <Image
+                    className="w-[80px] product-image"
+                    src={Cow2}
+                    alt="item"
+                  />
+                </div>
+
+                <div className="detail">
+                  <h4 className="product-name">Brown Cow</h4>
+
+                  <div className="wrapper">
+                    <div className="product-qty">
+                      {/* id decrement */}
+                      <button className="">
+                        <Image
+                          className="w-[20px] "
+                          src={remove}
+                          alt="remove"
+                        />
+                      </button>
+                      {/* id quantity */}
+                      <span className="">1</span>
+                      {/* id increment */}
+                      <button className="">
+                        <Image className="w-[20px] " src={add2} alt="remove" />
+                      </button>
+                    </div>
+                    {/* price+ id span price*/}
+                    <div className="">
+                      $ <span className="">50</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button className="product-close-btn">
+                  <Image className=" " src={close} alt="close" />
                 </button>
               </div>
             </div>
           </div>
 
-          {/* wrapper*/}
-          <div className="">
-            {/* discount token*/}
-            <div className="">
+          <div className="wrapper">
+            <div className="discount-token">
               {/* label default*/}
-              <label
-                htmlFor="discount-token"
-                className="pl-[10px] mb-[5px] text-[length:var(--fs-14)]  text-[color:var(--gris-espagnol)]"
-              >
+              <label htmlFor="discount-token" className="">
                 Gift card/Discount code
               </label>
-              {/* wrapper flex*/}
-              <div className="">
+
+              <div className="wrapper-flex">
                 {/* input default + id discount-token*/}
                 <input type="text" name="input-token" className="" />
-                {/* btn btn outline*/}
-                <button className="">Apply</button>
+
+                <button className="btn btn-outline">Apply</button>
               </div>
             </div>
 
-            {/* amount */}
-            <div className="">
+            <div className="amount">
               {/* subtotal */}
-              <div className="">
+              <div className="text-[color:var(--gris-espagnol)]">
                 <span>Subtotal</span>
                 <span>
                   ${/* id subtotal */}
@@ -273,16 +256,16 @@ export default function Shopcart() {
               </div>
 
               {/* tax */}
-              <div className="">
+              <div className="text-[color:var(--gris-espagnol)]">
                 <span>Tax</span>
                 <span>
                   ${/* id tax */}
-                  <span>?</span>
+                  <span>0.00</span>
                 </span>
               </div>
 
               {/* shipping */}
-              <div className="">
+              <div className="text-[color:var(--gris-espagnol)]">
                 <span>Shipping</span>
                 <span>
                   ${/* id shipping */}
@@ -290,12 +273,10 @@ export default function Shopcart() {
                 </span>
               </div>
 
-              {/* total */}
-              <div className="">
+              <div className="total">
                 <span>Total</span>
                 <span>
-                  ${/* id total */}
-                  <span>100</span>
+                  $<span className="total">100</span>
                 </span>
               </div>
             </div>

@@ -64,9 +64,12 @@ Image {
 }
 
 input {
-  /*font: inherit;*/
+  font: inherit;
   width: 100%;
-  /*border: none;*/
+  border: none;
+  background-color: #9e9e9ec6;
+  border-radius: var(--radius);
+  color: var(--davys-gris);
 }
 
 input:focus {
@@ -126,4 +129,142 @@ h2 {
   font-weight: var(--fw-5);
 }
 
+label {
+  padding-left: 10px;
+  margin-bottom: 5px;
+  font-size: var(--fs-14);
+  color: var(--gris-espagnol);
+}
 
+.focus-custom-outline:focus {
+  outline: 2px solid #4299e1; /* Replace with your desired color code, e.g., blue-500's color code */
+}
+
+/* CART SECTION STYLE */
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.cart-item-box {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-right: var(--px);
+  padding-left: var(--px);
+}
+
+.product-card:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.product-card .card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card .product-image {
+  border-radius: var(--radius);
+}
+
+.card .detail .product-name {
+  font-weight: var(--fw-6);
+  font-size: var(--fs-15);
+  color: var(--dim-gris);
+  margin-bottom: 10px;
+}
+
+.card .detail .wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.product-qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-qty button {
+  background: var(--platine);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-qty button:active,
+.product-close-btn:active {
+  transform: scale(0.95);
+}
+
+.product-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.product-close-btn img {
+  width: 25px;
+  filter: invert(95%) sepia(0%) saturate(1877%) hue-rotate(145deg)
+    brightness(72%) contrast(76%);
+}
+
+.product-close-btn:hover img {
+  filter: invert(61%) sepia(34%) saturate(5296%) hue-rotate(321deg)
+    brightness(98%) contrast(88%);
+}
+
+.discount-token {
+  padding: 40px var(--px);
+  /*border-top: 1px solid var(--gainsboro);
+  border-bottom: 1px solid var(--gainsboro);*/
+}
+
+.wrapper-flex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.wrapper-flex input {
+  padding: 12px 15px;
+  font-weight: var(--fw-6);
+  letter-spacing: 2px;
+}
+
+.btn-outline {
+  padding: 10px 25px;
+  border: 1px solid var(--Azur);
+  color: var(--Azur);
+  border-radius: var(--radius);
+}
+
+.btn-outline:hover {
+  background: var(--Azur);
+  color: var(--blanc);
+}
+
+.amount {
+  padding: 40px var(--px);
+}
+
+.amount > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.amount.total{
+  font-size: var(--fs-18);
+  font-weight: var(--fw-7);
+  color: var(--onyx);
+}
