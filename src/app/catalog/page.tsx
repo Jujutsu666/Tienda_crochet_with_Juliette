@@ -27,7 +27,7 @@ export default function Catalog() {
         <div className="flex items-center flex-wrap justify-around ">
           <div className=" basis-3/12 min-w-[200px] mb-[50px] p-2.5">
             <Image
-              className="w-[200px] "
+              className="w-[200px] h-[265px] "
               src={Cow1}
               alt="Picture of the author"
             />
@@ -58,7 +58,7 @@ export default function Catalog() {
 
           <div className="basis-3/12 min-w-[200px] mb-[50px] p-2.5">
             <Image
-              className="w-[200px] "
+              className="w-[200px] h-[265px] "
               src={Cow2}
               alt="Picture of the author"
             />
@@ -89,7 +89,7 @@ export default function Catalog() {
 
           <div className="basis-3/12 min-w-[200px] mb-[50px] p-2.5">
             <Image
-              className="w-[265px] h-[265px] "
+              className="w-[200px] h-[265px] "
               src={Bag1}
               alt="Picture of the author"
             />
@@ -120,7 +120,7 @@ export default function Catalog() {
 
           <div className="basis-3/12 min-w-[200px] mb-[50px] p-2.5">
             <Image
-              className="w-[167px] "
+              className="w-[200px] h-[265px] "
               src={Bag2}
               alt="Picture of the author"
             />
@@ -153,7 +153,7 @@ export default function Catalog() {
         <div className="flex items-center flex-wrap justify-around">
           <div className="basis-3/12 min-w-[200px] mb-[50px] p-2.5">
             <Image
-              className="w-[195px]  h-[250px]"
+              className="w-[200px] h-[265px]"
               src={Hat1}
               alt="Picture of the author"
             />
@@ -183,7 +183,7 @@ export default function Catalog() {
           </div>
           <div className="basis-3/12 min-w-[200px] mb-[50px] p-2.5">
             <Image
-              className="w-[200px]  h-[250px]"
+              className="w-[200px] h-[265px]"
               src={Hat2}
               alt="Picture of the author"
             />
@@ -214,7 +214,7 @@ export default function Catalog() {
 
           <div className="basis-3/12 min-w-[200px] mb-[50px] p-2.5">
             <Image
-              className="w-[265px]  h-[250px]"
+              className="w-[200px] h-[265px]"
               src={KeyChain1}
               alt="Picture of the author"
             />
@@ -244,7 +244,7 @@ export default function Catalog() {
           </div>
           <div className="basis-3/12 min-w-[200px] mb-[50px] p-2.5">
             <Image
-              className="w-[165px] h-[250px]"
+              className="w-[200px] h-[265px]"
               src={KeyChain2}
               alt="Picture of the author"
             />

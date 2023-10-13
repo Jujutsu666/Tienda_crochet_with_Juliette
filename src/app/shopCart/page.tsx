@@ -17,17 +17,17 @@ export default function Shopcart() {
         <Image className="w-[40px] " src={shop} alt="Shopping Cart image" />
         Shopping Cart
       </h1>
-      {/* item flex */}
-      <div className="flex flex-grow">
-        {/* checkout section*/}
+     
+      <div className=" item-flex flex flex-grow">
+        
         <section id="checkout">
           {/*  section heading*/}
           <h2>Payment Details</h2>
           {/*  payment form*/}
           <div className="mb-[40px]">
-            <div className="flex items-center gap-[30px] mb-[40px]">
+            <div className=" payment-method flex items-center gap-[30px] mb-[40px]">
               {/*   method1 */}
-              <button className="w-[50%] flex items-center gap-5 cursor-pointer px-[30px] py-[15px] border-[var(--quick-silver)] rounded-[var(--radius)] border-[1px] border-solid hover:bg-blue-500 hover:text-white">
+              <button className=" method selected w-[50%] flex items-center gap-5 cursor-pointer px-[30px] py-[15px] border-[var(--quick-silver)] rounded-[var(--radius)] border-[1px] border-solid hover:bg-blue-500 hover:text-white">
                 <Image
                   className="w-[20px] "
                   src={card}
@@ -41,7 +41,7 @@ export default function Shopcart() {
                 />
               </button>
               {/*   method2 */}
-              <button className="w-[50%] flex items-center gap-5 cursor-pointer px-[30px] py-[15px] border-[var(--quick-silver)] rounded-[var(--radius)] border-[1px] border-solid hover:bg-blue-500 hover:text-white">
+              <button className=" method w-[50%] flex items-center gap-5 cursor-pointer px-[30px] py-[15px] border-[var(--quick-silver)] rounded-[var(--radius)] border-[1px] border-solid hover:bg-blue-500 hover:text-white">
                 <Image
                   className="w-[20px] filter hover:invert hover:opacity-100 "
                   src={paypal}
@@ -93,7 +93,7 @@ export default function Shopcart() {
                     Expiration date
                   </label>
                   {/*  expire data + id expire-date*/}
-                  <div className=" flex items-center gap-[13px] ">
+                  <div className=" expire-date flex items-center gap-[13px] ">
                     <input
                       type="number"
                       placeholder="31"
@@ -115,7 +115,7 @@ export default function Shopcart() {
                 </div>
 
                 {/*   cvv */}
-                <div className="w-[50%]">
+                <div className=" cvv w-[50%]">
                   {/*   label default */}
                   <label htmlFor="cvv" className="">
                     CVV
@@ -131,8 +131,8 @@ export default function Shopcart() {
             </form>
           </div>
 
-          {/*  btn btn primary - span id payamount outlinenotworking*/}
-          <button className="bg-blue-500 px-[45px] py-[13px] font-medium text-white rounded-[var(--radius)] active:scale-99 focus:text-white focus:outline-offset-2 focus-custom-outline  ">
+         
+          <button className=" btn btn-primary bg-blue-500 px-[45px] py-[13px] font-medium text-white rounded-[var(--radius)] active:scale-99 focus:text-white focus:outline-offset-2 focus-custom-outline  ">
             <b className="mr-[10px]">Pay</b> $ <span className="">100</span>
           </button>
         </section>
