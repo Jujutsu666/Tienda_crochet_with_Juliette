@@ -1,14 +1,19 @@
 import Image from "next/image";
 import myImage from "public/images/logoblack1.png";
-
+import welcome from "public/images/welcome.png";
 export default function AboutUsPage() {
   return (
     <main className="flex flex-col items-center justify-between">
-      <section className="min-h-[calc(100vh-96px)]  w-full flex flex-col items-center ">
+      <section className="min-h-[calc(100vh-96px)]  w-full flex flex-col items-center pb-2 pt-5" >
         <div className="">
           <Image
-            className="w-[200%] mx-auto mt-[50px] mb-[50px]"
+            className="w-[200%] mx-auto mt-[50px] mb-[50px]  hidden sm:inline"
             src={myImage}
+            alt="Picture of the author"
+          />
+          <Image
+            className="w-[200%] mx-auto mt-[50px] mb-[50px] sm:hidden"
+            src={welcome}
             alt="Picture of the author"
           />
         </div>
